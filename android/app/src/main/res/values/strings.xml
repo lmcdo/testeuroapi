@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">PropertyFinder</string>
+=======
+    <string name="app_name">testeuroApi</string>
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79
 </resources>
