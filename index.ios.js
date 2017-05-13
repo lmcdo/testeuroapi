@@ -6,7 +6,7 @@ var {
     Text,
     View,
     TouchableHighlight,
-    AlertIOS,
+    AlertIOS
 } = React;
 const url = 'https://europeana.eu/api/v2/search.json?wskey=NbAjJewQk&query=europeana_collectionName:*&facet=europeana_collectionName&f.europeana_collectionName.facet.limit=2000&profile=facets'
 var testeuroapi = React.createClass({
