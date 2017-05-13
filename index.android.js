@@ -12,7 +12,11 @@ import {
   View
 } from 'react-native';
 
+<<<<<<< HEAD
+class PropertyFinder extends Component {
+=======
 export default class testeuroApi extends Component {
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79
   render() {
     return (
       <View style={styles.container}>
@@ -50,4 +54,8 @@ const styles = StyleSheet.create({
   },
 });
 
+<<<<<<< HEAD
+AppRegistry.registerComponent('PropertyFinder', () => PropertyFinder);
+=======
 AppRegistry.registerComponent('testeuroApi', () => testeuroApi);
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79

@@ -1,4 +1,30 @@
 [ignore]
+<<<<<<< HEAD
+
+# We fork some components by platform.
+.*/*[.]android.js
+
+# Ignore templates with `@flow` in header
+.*/local-cli/generator.*
+
+# Ignore malformed json
+.*/node_modules/y18n/test/.*\.json
+
+# Ignore the website subdir
+<PROJECT_ROOT>/website/.*
+
+# Ignore BUCK generated dirs
+<PROJECT_ROOT>/\.buckd/
+
+# Ignore unexpected extra @providesModule
+.*/node_modules/commoner/test/source/widget/share.js
+
+# Ignore duplicate module providers
+# For RN Apps installed via npm, "Libraries" folder is inside node_modules/react-native but in the source repo it is in the root
+.*/Libraries/react-native/React.js
+.*/Libraries/react-native/ReactNative.js
+.*/node_modules/jest-runtime/build/__tests__/.*
+=======
 ; We fork some components by platform
 .*/*[.]android.js
 
@@ -13,6 +39,7 @@
 ; "node_modules/react-native" but in the source repo it is in the root
 .*/Libraries/react-native/React.js
 .*/Libraries/react-native/ReactNative.js
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79
 
 [include]
 
@@ -22,25 +49,45 @@ node_modules/react-native/flow
 flow/
 
 [options]
+<<<<<<< HEAD
+module.system=haste
+
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+=======
 emoji=true
 
 module.system=haste
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79
 
 experimental.strict_type_args=true
 
 munge_underscores=true
 
+<<<<<<< HEAD
+module.name_mapper='^image![a-zA-Z0-9$_-]+$' -> 'GlobalImageStub'
+=======
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79
 module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> 'RelativeImageStub'
 
 suppress_type=$FlowIssue
 suppress_type=$FlowFixMe
 suppress_type=$FixMe
 
+<<<<<<< HEAD
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe\\($\\|[^(]\\|(\\(>=0\\.\\(3[0-2]\\|[1-2][0-9]\\|[0-9]\\).[0-9]\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue\\((\\(>=0\\.\\(3[0-2]\\|1[0-9]\\|[1-2][0-9]\\).[0-9]\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)?:? #[0-9]+
+=======
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe\\($\\|[^(]\\|(\\(>=0\\.\\(3[0-8]\\|[1-2][0-9]\\|[0-9]\\).[0-9]\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)
 suppress_comment=\\(.\\|\n\\)*\\$FlowIssue\\((\\(>=0\\.\\(3[0-8]\\|1[0-9]\\|[1-2][0-9]\\).[0-9]\\)? *\\(site=[a-z,_]*react_native[a-z,_]*\\)?)\\)?:? #[0-9]+
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79
 suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
 
 unsafe.enable_getters_and_setters=true
 
 [version]
+<<<<<<< HEAD
+^0.32.0
+=======
 ^0.38.0
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79

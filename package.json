@@ -1,4 +1,17 @@
 {
+<<<<<<< HEAD
+  "name": "PropertyFinder",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "15.3.2",
+    "react-native": "0.34.1"
+  }
+}
+=======
 	"name": "testeuroApi",
 	"version": "0.0.1",
 	"private": true,
@@ -20,3 +33,4 @@
 		"preset": "react-native"
 	}
 }
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79

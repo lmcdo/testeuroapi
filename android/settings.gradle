@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+rootProject.name = 'PropertyFinder'
+=======
 rootProject.name = 'testeuroApi'
+>>>>>>> 499977e897a666e5d0f26eef2cbc31b721560c79
 
 include ':app'
